@@ -1,0 +1,36 @@
+# Python environments and caches
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.phase6-venv/
+.pytest_cache/
+.mplconfig/
+.ipynb_checkpoints/
+
+# Local secrets and environment files
+.streamlit/secrets.toml
+.env
+.env.*
+!.env.example
+
+# User-provided dataset archives (license review required before publishing)
+/archive.zip
+/archive (1).zip
+/data/raw/*.zip
+
+# Generated data and model artifacts; reproduce from the licensed source data
+/data/processed/cleaned_properties.csv
+/models/*.pkl
+/models/model_metadata.json
+/reports/outlier_review.csv
+/reports/test_predictions.csv
+/reports/prediction_error_analysis.csv
+/reports/prediction_error_by_city.csv
+
+# Build and OS files
+*.log
+.coverage
+htmlcov/
+Thumbs.db
+.DS_Store

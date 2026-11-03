@@ -1,0 +1,122 @@
+feature,importance
+numeric__area_sqft,0.6283837598886443
+numeric__bathrooms,0.08489676457470312
+category__city_mumbai,0.05454428269890194
+category__city_new-delhi,0.03640430038069707
+category__city_gurgaon,0.024421602651699292
+numeric__bedrooms,0.02064497887191786
+category__city_bhiwadi,0.012676280223888432
+category__city_bangalore,0.010511510569929544
+category__city_thane,0.01042919899431193
+category__city_pune,0.01032417528470576
+category__area_basis_Super Area,0.008915202008663472
+category__city_chennai,0.008895837010484934
+category__city_vadodara,0.008481933023693601
+category__area_basis_Carpet Area,0.0070248363657956225
+numeric__balconies,0.006379583791769491
+category__city_hyderabad,0.005684384981256975
+category__city_navi-mumbai,0.004589869025984028
+category__city_goa,0.004110651008165824
+category__city_sonipat,0.0039013986591880556
+category__overlooking_Main Road,0.003659542068322536
+category__city_kolkata,0.003276096333314186
+numeric__missingindicator_balconies,0.0025794717158229494
+category__furnishing_Unfurnished,0.002334520383375105
+category__facing_East,0.002308996783887606
+category__furnishing_Furnished,0.0022323448860025004
+category__furnishing_Semi-Furnished,0.002178131116773066
+category__city_surat,0.0020275736509962673
+category__transaction_New Property,0.001973760729963346
+category__city_jaipur,0.0019192563198581804
+category__city_ahmedabad,0.0018309313270745422
+category__transaction_Resale,0.0017144868758560683
+category__overlooking_Garden/Park,0.0014516584615831148
+"category__overlooking_Garden/Park, Main Road",0.0014142609630668234
+category__city_kalyan,0.001405624083423259
+category__city_zirakpur,0.0012857109898387474
+category__city_faridabad,0.0011340781303430091
+category__city_noida,0.001131592964997861
+category__facing_North,0.0010945770301102233
+category__facing_North - East,0.0010448318823642775
+category__ownership_Leasehold,0.000980908547908928
+category__ownership_Freehold,0.0008056045152368777
+"category__overlooking_Garden/Park, Pool, Main Road",0.0007780685059284274
+category__city_vapi,0.0007043412312711854
+category__city_raipur,0.0006816130745276555
+category__facing_West,0.0005452320135459245
+category__city_agra,0.0003824093967822334
+category__facing_South,0.00037714739045901493
+category__city_panchkula,0.0003637333626716987
+"category__overlooking_Garden/Park, Pool",0.00035706598348336885
+category__ownership_Co-operative Society,0.00035219410725190664
+category__city_siliguri,0.00029840638719955446
+numeric__missingindicator_bathrooms,0.0002618296959279488
+category__ownership_Power Of Attorney,0.0002349401032336026
+"category__overlooking_Pool, Garden/Park, Main Road",0.00022978602541596748
+category__city_greater-noida,0.00021594990233683535
+category__facing_North - West,0.0002114399567766851
+category__city_guwahati,0.0002062353942328092
+category__city_chandigarh,0.00019919203102842543
+numeric__missingindicator_bedrooms,0.00018415568714677636
+category__city_bhiwandi,0.0001763915922826953
+category__city_durgapur,0.00017263268177139922
+category__city_kochi,0.0001713453387259457
+category__facing_South - East,0.0001609182727215383
+category__city_palghar,0.00014281792756842913
+category__city_patna,0.00011843841084357726
+category__city_jamshedpur,0.0001183544129780612
+category__city_lucknow,0.00010748874213978864
+category__facing_South -West,9.547927962969185e-05
+category__city_bhopal,8.933915789244656e-05
+category__city_mohali,8.640319501212484e-05
+category__city_dehradun,8.162198239968776e-05
+category__city_tirupati,7.509077181012246e-05
+category__city_trichy,6.839859402038945e-05
+category__city_jabalpur,6.218128388344576e-05
+category__overlooking_Pool,6.148633239397682e-05
+category__city_visakhapatnam,5.562537271497842e-05
+category__city_allahabad,5.2633914533551985e-05
+category__city_kanpur,5.192896363583613e-05
+category__city_ghaziabad,5.012437795334953e-05
+"category__overlooking_Pool, Garden/Park",4.295281924683285e-05
+category__city_guntur,3.3964807599005305e-05
+"category__overlooking_Pool, Main Road",3.377009574445509e-05
+category__city_ranchi,3.1589115401077046e-05
+"category__overlooking_Main Road, Garden/Park",3.109907159108684e-05
+category__city_ernakulam,2.5462137048416433e-05
+category__city_madurai,2.4814077181002695e-05
+category__city_haridwar,2.204390705326567e-05
+category__city_shimla,1.8354416327991285e-05
+category__city_badlapur,1.6979102930306966e-05
+category__city_aurangabad,1.5061905095576519e-05
+category__city_mangalore,1.4839870954658173e-05
+"category__overlooking_Main Road, Garden/Park, Pool",1.2305225288845879e-05
+category__city_mysore,1.1286165572294939e-05
+category__city_bhubaneswar,9.914598996065907e-06
+category__city_belgaum,8.427914888285221e-06
+category__city_coimbatore,8.41419155351911e-06
+category__city_udaipur,8.173945260301401e-06
+category__city_satara,8.149572451006063e-06
+category__city_varanasi,7.102228120245054e-06
+category__city_vijayawada,6.429480960689389e-06
+category__city_trivandrum,5.878919952219577e-06
+category__city_nashik,5.179916431392538e-06
+category__city_nagpur,3.763965222003456e-06
+category__city_indore,2.237258127864457e-06
+category__city_ludhiana,1.3584089581802358e-06
+category__city_vrindavan,1.2979712217469933e-06
+category__city_thrissur,9.596348058477187e-07
+category__city_ahmadnagar,6.496656405579696e-07
+"category__overlooking_Main Road, Pool",5.889817236483624e-07
+category__city_gwalior,0.0
+category__city_navsari,0.0
+category__city_kozhikode,0.0
+category__city_jodhpur,0.0
+category__city_nellore,0.0
+category__city_udupi,0.0
+category__city_rajahmundry,0.0
+category__city_solapur,0.0
+category__city_pondicherry,0.0
+category__city_palakkad,0.0
+"category__overlooking_Garden/Park, Main Road, Pool",0.0
+category__overlooking_infrequent_sklearn,0.0
