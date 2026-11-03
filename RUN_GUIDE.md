@@ -46,4 +46,4 @@ Test-Path .\\data\\raw\\india\_property\_listings\_81\_cities.zip
 
 .\\.venv\\Scripts\\python.exe -m streamlit run app.py
 
-####(" the 1st archive contains the most data to train the model archive(1) doesn't needed to be trained this archive is kept for future use")
+(" the 1st archive contains the most data to train the model archive(1) doesn't needed to be trained this archive is kept for future use")
