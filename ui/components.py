@@ -5,17 +5,27 @@ import streamlit as st
 
 def brand():
     st.markdown("""
-    <div class="ew-brand">
-      <div class="ew-mark">E</div>
-      <div><div class="ew-brand-name">ESTATEWISE AI</div><div class="ew-brand-sub">Property intelligence</div></div>
-    </div>
+    <div class="ew-brand"><div class="ew-mark">E</div><div>
+      <div class="ew-brand-name">EstateWise AI</div><div class="ew-brand-sub">Property intelligence</div>
+    </div></div>
     """, unsafe_allow_html=True)
+
+
+def topbar(page, metadata=None):
+    model_ok = bool(metadata)
+    status = f"{escape(metadata['model_name'])} loaded" if model_ok else "Model unavailable"
+    dot = "" if model_ok else " off"
+    st.markdown(
+        f'<div class="ew-topbar"><div class="ew-breadcrumb">EstateWise <span style="color:#A5AFBA">/</span> {escape(page)}</div>'
+        f'<div class="ew-status"><span class="ew-status-dot{dot}"></span>{status}</div></div>',
+        unsafe_allow_html=True,
+    )
 
 
 def hero(title, copy, kicker="ESTATEWISE AI"):
     st.markdown(
-        f'<section class="ew-hero"><div class="ew-kicker">{escape(kicker)}</div>'
-        f'<h1 class="ew-title">{escape(title)}</h1><p class="ew-copy">{escape(copy)}</p></section>',
+        f'<header class="ew-page-header"><div class="ew-kicker">{escape(kicker)}</div>'
+        f'<h1 class="ew-title">{escape(title)}</h1><p class="ew-copy">{escape(copy)}</p></header>',
         unsafe_allow_html=True,
     )
 
@@ -51,7 +61,7 @@ def empty_state(title, copy, tone="info"):
 
 
 def footer():
-    st.markdown('<div class="ew-footer">EstateWise AI &nbsp;·&nbsp; Intelligent Real Estate Analytics<br>Built with Python, Machine Learning and Data Science.</div>', unsafe_allow_html=True)
+    st.markdown('<div class="ew-footer">EstateWise AI <span style="padding:0 5px">·</span> Historical asking-price analysis <span style="float:right">CSE570 · Machine Learning with Python</span></div>', unsafe_allow_html=True)
 
 
 def navigate_button(label, page, key):

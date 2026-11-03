@@ -3,16 +3,16 @@ import plotly.express as px
 
 def style(fig, height=360):
     fig.update_layout(
-        template="plotly_dark",
-        paper_bgcolor="rgba(0,0,0,0)",
-        plot_bgcolor="rgba(0,0,0,0)",
-        font={"family": "Inter, Segoe UI, sans-serif", "color": "#dce6f4", "size": 12},
-        margin={"l": 8, "r": 8, "t": 42, "b": 8},
+        template="plotly_white",
+        font={"family": "Inter, Plus Jakarta Sans, Segoe UI, sans-serif", "color": "#526071", "size": 12},
+        margin={"l": 12, "r": 16, "t": 30, "b": 12},
         height=height,
         legend_title_text="",
+        paper_bgcolor="rgba(255,255,255,0)",
+        plot_bgcolor="rgba(255,255,255,0)",
     )
-    fig.update_xaxes(showgrid=False, zeroline=False, linecolor="rgba(151,174,204,.14)")
-    fig.update_yaxes(gridcolor="rgba(151,174,204,.10)", zeroline=False)
+    fig.update_xaxes(showgrid=False, zeroline=False, linecolor="#E5E9ED", tickfont_color="#647184")
+    fig.update_yaxes(gridcolor="#EDF0F2", zeroline=False, tickfont_color="#647184")
     return fig
 
 
@@ -28,8 +28,9 @@ def city_medians(data, limit=20):
         y="city",
         orientation="h",
         color="median_price_inr",
-        color_continuous_scale=["#78a9ff", "#36c9a5"],
+        color_discrete_sequence=["#087F5B"],
         hover_data={"median_price_inr": ":,.0f", "records": ":,", "median_area_sqft": ":,.0f"},
         labels={"city": "City", "median_price_inr": "Median asking price (INR)", "records": "Dataset records", "median_area_sqft": "Median area (sq. ft.)"},
     )
-    return style(fig, max(360, 25 * len(grouped)))
+    fig.update_traces(marker_line_width=0, hovertemplate="%{y}<br>Median price: ₹%{x:,.0f}<extra></extra>")
+    return style(fig, max(360, 27 * len(grouped)))

@@ -2,6 +2,7 @@ import streamlit as st
 
 from src.predict import load_artifacts
 from ui.about import render as render_about
+from ui.components import topbar
 from ui.dashboard import render as render_dashboard
 from ui.explore import render as render_explore
 from ui.market_insights import render as render_market_insights
@@ -13,7 +14,7 @@ from ui.theme import apply_theme
 from ui.unavailable import buy_vs_wait, forecast
 
 
-st.set_page_config(page_title="EstateWise AI", page_icon="E", layout="wide", initial_sidebar_state="expanded")
+st.set_page_config(page_title="EstateWise AI · Property intelligence", page_icon="E", layout="wide", initial_sidebar_state="expanded")
 apply_theme()
 
 
@@ -29,8 +30,9 @@ except (FileNotFoundError, ValueError, OSError) as error:
     model, metadata, model_error = None, None, str(error)
 
 page = render_sidebar(metadata)
-if model is None and page != "Property Predictor":
-    st.warning("The trained model is unavailable. Prediction is disabled until you run `python -m src.train`.")
+topbar(page, metadata)
+if model is None and page == "Property Predictor":
+    st.warning("The trained model is unavailable. Run `python -m src.train` to enable property estimates.")
 
 if page == "Overview":
     render_dashboard()
