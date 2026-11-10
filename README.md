@@ -24,5 +24,3 @@ These notebooks and scripts should be run **in order** because each stage reads 
 2. `02_data_cleaning_and_eda.ipynb` — Data cleansing and visual charts generation.
 3. `03_model_training.ipynb` — Training baseline and optimized ML models.
 4. `04_model_evaluation.ipynb` — Assessing model accuracy and generating performance plots.
-
-<FollowUp label="Want me to help you adjust the table or text further to fit your specific M.Tech submission guidelines?" query="Can you customize this README template to include specific metrics or details about my EstateWise-AI project?"/>
