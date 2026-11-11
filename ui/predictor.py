@@ -67,7 +67,7 @@ def render(model, metadata, model_error):
         with left:
             st.markdown(
                 f'<div class="ew-result"><div class="ew-kicker">ESTIMATED ASKING PRICE</div>'
-                f'<div class="ew-result-value">{inr(result["estimate"])}</div>'
+                f'<div class="ew-result-value">{inr(result["estimate"]), compact=False}</div>'
                 f'<div class="ew-muted">{escape(details["city"].replace("-", " ").title())} · {result["area"]:,.0f} sq. ft. · {details["bedrooms"]} bedrooms</div></div>',
                 unsafe_allow_html=True,
             )
