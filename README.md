@@ -60,7 +60,7 @@ These notebooks and scripts should be run **in order** because each stage reads 
 
 ---
 
-## 💻 Installation & Running Locally
+## 💻 Installation & Running Locally on system
 
 Follow these steps to set up and run the project on your local machine:
 
