@@ -9,6 +9,9 @@ from ui.data import load_clean_data, load_csv
 
 def render(model, metadata, model_error):
     hero("Property valuation", "Build a profile from the fields represented in the training data, then review the trained model’s asking-price estimate.", "Machine-learning estimate")
+
+    st.caption("AI-powered property price estimation")
+    
     if model is None:
         st.error(model_error or "The trained model could not be loaded.")
         st.code("python -m src.train\nstreamlit run app.py", language="powershell")
