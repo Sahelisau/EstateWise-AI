@@ -5,7 +5,7 @@
 [![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-1.4%2B-orange.svg)](https://scikit-learn.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-End-to-end machine learning solution for predicting property valuations and analyzing housing market trends using Python.
+End-to-end machine learning solution for predicting property valuations and analyzing housing market trends using Python. 
 
 ---
 
